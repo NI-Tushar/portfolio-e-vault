@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioVault - Secure Your Personal Portfolio Subdomain</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imgs/logo/logo.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#044e36',
+              950: '#022c20',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F8FAF9] font-sans text-slate-800 antialiased selection:bg-emerald-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- Ambient Background Glows -->
+  <div class="absolute top-0 right-0 w-[550px] h-[550px] bg-emerald-200/40 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+  <div class="absolute top-1/3 left-0 w-[450px] h-[450px] bg-emerald-100/50 rounded-full blur-3xl -z-10 -translate-x-1/3 pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-emerald-100/40 rounded-full blur-3xl -z-10 translate-x-1/4 pointer-events-none"></div>
+
+  <!-- Sticky Header / Navigation -->
+  <header class="sticky top-0 z-50 w-full bg-[#F8FAF9]/85 backdrop-blur-md border-b border-slate-200/60 shadow-xs transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 sm:py-4">
+      <nav class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2.5 group">
+          <img src="imgs/logo/logo.png" alt="PortfolioeVault Logo" class="w-9 h-9 object-contain group-hover:scale-105 transition-transform">
+          <span class="text-xl font-bold tracking-tight text-slate-900">
+            Portfolio<span class="text-emerald-600"> E-Vault</span>
+          </span>
+        </a>
+
+        <!-- Center Links -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#" class="text-slate-900 font-semibold text-sm flex items-center gap-1.5 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-emerald-600 after:rounded-full">
+            <i class="fa-solid fa-house text-emerald-600 text-xs"></i>
+            Home
+          </a>
+          <a href="#templates" class="text-slate-600 hover:text-emerald-600 transition-colors text-sm font-medium">Templates</a>
+          <a href="#about" class="text-slate-600 hover:text-emerald-600 transition-colors text-sm font-medium">About</a>
+          <a href="#contact" class="text-slate-600 hover:text-emerald-600 transition-colors text-sm font-medium">Contact</a>
+        </div>
+
+        <!-- Action Button -->
+        <div>
+          <a href="#form" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-emerald-600/20 hover:shadow-lg hover:shadow-emerald-600/30 transition-all">
+            <i class="fa-solid fa-rocket text-xs"></i>
+            <span>Get Started</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-6 space-y-6">
+        <!-- Top Pill Badge -->
+        <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200/80 px-4 py-1.5 rounded-full">
+          <span class="text-emerald-600 text-xs">✦</span>
+          <span class="text-emerald-800 text-xs font-semibold tracking-wide">Create &bull; Showcase &bull; Inspire</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+          Secure Your Personal<br>
+          <span class="text-emerald-600">Portfolio Subdomain</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          Showcase your work with your own personal subdomain at portfolioevault.com. Choose from our professional layouts, fill out the form below, and get started.
+        </p>
+
+        <!-- Feature Checkmarks List -->
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-2">
+          <div class="flex items-center gap-2 text-slate-800 font-semibold text-xs sm:text-sm">
+            <span class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Your Own Subdomain</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 font-semibold text-xs sm:text-sm">
+            <span class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Beautiful Templates</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 font-semibold text-xs sm:text-sm">
+            <span class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Fast & Secure</span>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a href="#form" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-emerald-600/25 hover:shadow-xl hover:shadow-emerald-600/35 transition-all">
+            <i class="fa-solid fa-rocket text-sm"></i>
+            <span>Start Your Journey</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="#templates" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full border border-slate-200 shadow-sm hover:shadow transition-all">
+            <i class="fa-solid fa-play text-xs text-slate-700"></i>
+            <span>Watch Demo</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Mockup Visual -->
+      <div class="lg:col-span-6 relative flex justify-center items-center py-6">
+        
+        <!-- Organic Gradient Blobs Around the Screen (Matching Reference Image) -->
+        <div class="absolute -top-12 -right-8 w-[380px] sm:w-[440px] h-[380px] sm:h-[440px] bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-800 rounded-[50px] opacity-75 blur-3xl pointer-events-none transform rotate-12"></div>
+        <div class="absolute -bottom-10 -left-10 w-[320px] sm:w-[380px] h-[320px] sm:h-[380px] bg-gradient-to-tr from-emerald-200/90 via-teal-100/80 to-emerald-300/60 rounded-full blur-2xl pointer-events-none"></div>
+        
+        <!-- Curved Ambient Organic Shapes Behind Card -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10">
+          <div class="w-[480px] h-[380px] bg-gradient-to-r from-emerald-100/60 via-emerald-200/40 to-teal-200/50 rounded-[60px] transform -rotate-6 blur-xl"></div>
+        </div>
+
+        <!-- 3D Perspective Container -->
+        <div class="relative w-full max-w-[530px] [perspective:1400px]">
+          
+          <!-- Floating Badge 1: Code Badge (Left) -->
+          <div class="absolute -left-6 sm:-left-8 top-16 sm:top-20 z-30 w-14 h-14 sm:w-16 sm:h-16 bg-white/95 backdrop-blur-md rounded-xl shadow-[0_15px_35px_rgba(0,0,0,0.12)] border-2 border-white flex items-center justify-center transform -rotate-12 hover:scale-110 hover:-rotate-6 transition-all duration-300">
+            <span class="text-emerald-600 text-xl sm:text-2xl font-black font-mono tracking-tighter">&lt;/&gt;</span>
+          </div>
+
+          <!-- Floating Badge 2: Briefcase Badge (Right Middle) -->
+          <div class="absolute -right-4 sm:-right-6 top-1/2 -translate-y-4 z-30 w-14 h-14 sm:w-16 sm:h-16 bg-white/95 backdrop-blur-md rounded-xl shadow-[0_15px_35px_rgba(0,0,0,0.12)] border-2 border-white flex items-center justify-center transform rotate-12 hover:scale-110 hover:rotate-6 transition-all duration-300">
+            <i class="fa-solid fa-briefcase text-emerald-600 text-xl sm:text-2xl"></i>
+          </div>
+
+          <!-- Floating Badge 3: Photo Badge (Bottom Right) -->
+          <div class="absolute right-4 sm:right-6 -bottom-6 sm:-bottom-7 z-30 w-14 h-14 sm:w-16 sm:h-16 bg-white/95 backdrop-blur-md rounded-xl shadow-[0_15px_35px_rgba(0,0,0,0.12)] border-2 border-white flex items-center justify-center transform -rotate-6 hover:scale-110 hover:rotate-0 transition-all duration-300">
+            <i class="fa-solid fa-image text-emerald-600 text-xl sm:text-2xl"></i>
+          </div>
+
+          <!-- Angular 3D Tilted Browser Screen Window -->
+          <div class="w-full bg-white rounded-xl p-2 sm:p-2.5 shadow-[0_35px_70px_-15px_rgba(4,78,54,0.25),0_20px_40px_-15px_rgba(15,23,42,0.18)] border-4 border-white [transform-style:preserve-3d] [transform:rotateY(-18deg)_rotateX(12deg)_rotateZ(-4deg)] hover:[transform:rotateY(-10deg)_rotateX(6deg)_rotateZ(-2deg)] transition-all duration-500 ease-out overflow-hidden">
+            
+            <!-- Window Inner Container -->
+            <div class="rounded-xl overflow-hidden border border-slate-100 flex flex-col bg-white">
+              
+              <!-- Window Top Bar -->
+              <div class="bg-white px-4 sm:px-5 py-3 border-b border-slate-100 flex items-center justify-between">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#f87171]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#fbbf24]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#34d399]"></span>
+                </div>
+                
+                <div class="flex items-center gap-1.5">
+                  <img src="imgs/logo/logo.png" alt="Logo" class="w-4 h-4 object-contain">
+                  <span class="text-xs font-bold text-slate-800 tracking-tight">PortfolioeVault</span>
+                </div>
+
+                <div class="flex items-center gap-2 sm:gap-3">
+                  <div class="hidden sm:flex items-center gap-2.5 text-[11px] font-medium text-slate-500">
+                    <span class="text-slate-800 font-semibold">Home</span>
+                    <span>About</span>
+                    <span>Projects</span>
+                    <span>Contact</span>
+                  </div>
+                  <span class="bg-[#0b1e36] hover:bg-slate-900 text-white text-[10px] sm:text-[11px] font-semibold px-3 py-1 rounded-full shadow-xs">
+                    Hire Me
+                  </span>
+                </div>
+              </div>
+
+              <!-- Main Hero Banner Inside Screen with Mint-to-Emerald Gradient -->
+              <div class="relative bg-gradient-to-br from-[#eafaf1] via-[#dcf7e7] to-[#cbf2dc] p-5 sm:p-7 overflow-hidden">
+                
+                <!-- Fluid Organic Accent Blobs Inside Screen Behind Developer -->
+                <div class="absolute -right-8 -top-6 w-48 h-48 bg-emerald-400/35 rounded-full blur-xl pointer-events-none"></div>
+                <div class="absolute right-8 top-12 w-36 h-36 bg-emerald-500/25 rounded-full blur-lg pointer-events-none"></div>
+                <div class="absolute -left-10 -bottom-10 w-36 h-36 bg-emerald-200/50 rounded-full blur-lg pointer-events-none"></div>
+
+                <div class="grid grid-cols-12 gap-3 items-center relative z-10">
+                  
+                  <!-- Left Text inside Screen -->
+                  <div class="col-span-7 space-y-2">
+                    <span class="text-slate-600 font-bold text-xs tracking-wide">Hello, I'm</span>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+                      Creative Developer
+                    </h3>
+                    <p class="text-slate-600 text-xs sm:text-[13px] leading-relaxed max-w-[210px]">
+                      Turning ideas into beautiful digital experiences.
+                    </p>
+                    <div class="pt-2">
+                      <a href="#templates" class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-4 py-2 rounded-full shadow-md shadow-emerald-600/30 transition-all">
+                        <span>See My Work</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Right Cutout Portrait inside Screen -->
+                  <div class="col-span-5 flex justify-end items-end relative pt-2">
+                    <!-- Lush Emerald Organic Shape directly behind the Developer -->
+                    <div class="absolute right-0 bottom-2 w-28 sm:w-32 h-28 sm:h-32 bg-gradient-to-tr from-emerald-500 to-teal-400 rounded-full opacity-90 blur-xs"></div>
+                    <div class="relative w-32 sm:w-36 h-40 sm:h-44 rounded-xl overflow-hidden shadow-xl border-2 border-white/90 bg-slate-900 group z-10">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Developer with glasses" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                      <!-- Inner soft gradient vignette -->
+                      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Bottom White Stats Row inside Screen -->
+              <div class="bg-white px-4 sm:px-6 py-3.5 border-t border-emerald-100/80 flex items-center justify-between text-center">
+                <div class="flex-1">
+                  <div class="text-base sm:text-lg font-black text-slate-900 leading-tight">50+</div>
+                  <div class="text-[10px] sm:text-[11px] font-semibold text-slate-400 mt-0.5">Projects</div>
+                </div>
+                <div class="w-px h-7 bg-slate-100"></div>
+                <div class="flex-1">
+                  <div class="text-base sm:text-lg font-black text-slate-900 leading-tight">2+</div>
+                  <div class="text-[10px] sm:text-[11px] font-semibold text-slate-400 mt-0.5">Years Experience</div>
+                </div>
+                <div class="w-px h-7 bg-slate-100"></div>
+                <div class="flex-1">
+                  <div class="text-base sm:text-lg font-black text-slate-900 leading-tight">100%</div>
+                  <div class="text-[10px] sm:text-[11px] font-semibold text-slate-400 mt-0.5">Client Satisfaction</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Subdomain Request Form Card Section -->
+  <section id="form" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="bg-white rounded-xl border border-slate-100 shadow-xl p-6 sm:p-8 lg:p-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left Side: Illustrated Info Box -->
+        <div class="lg:col-span-4 bg-[#E8F8F0] rounded-xl p-8 flex flex-col items-center text-center justify-center relative overflow-hidden">
+          <!-- Ambient decoration -->
+          <div class="absolute -top-10 -right-10 w-32 h-32 bg-emerald-200/50 rounded-full blur-2xl"></div>
+
+          <!-- Laptop & Shield Illustration Container -->
+          <div class="relative w-44 h-36 flex items-center justify-center my-2">
+            <!-- Laptop Body -->
+            <div class="w-36 h-24 bg-slate-800 rounded-t-xl border-4 border-slate-700 shadow-lg relative flex flex-col items-center justify-center p-2">
+              <!-- Screen content -->
+              <div class="w-full h-full bg-[#10b981]/20 rounded flex items-center justify-center border border-emerald-400/30">
+                <div class="space-y-1 w-full px-2">
+                  <div class="h-1 bg-emerald-400/60 rounded w-3/4"></div>
+                  <div class="h-1 bg-emerald-400/40 rounded w-1/2"></div>
+                  <div class="h-1 bg-emerald-400/50 rounded w-2/3"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Laptop Base -->
+            <div class="absolute bottom-4 w-44 h-3 bg-slate-600 rounded-b-md shadow-md"></div>
+            
+            <!-- Shield Lock Badge in front of Laptop -->
+            <div class="absolute -right-1 bottom-6 w-14 h-16 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-xl shadow-xl flex items-center justify-center text-white border-2 border-white">
+              <i class="fa-solid fa-shield-halved text-2xl"></i>
+            </div>
+          </div>
+
+          <!-- Headline -->
+          <h3 class="text-xl font-bold text-slate-900 mt-4 leading-snug">
+            Get Your Subdomain<br>in Minutes
+          </h3>
+
+          <!-- Subtext -->
+          <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed max-w-xs">
+            Just fill out the form and let us know your preferences. We'll set up your portfolio subdomain quickly.
+          </p>
+        </div>
+
+        <!-- Right Side: The Form -->
+        <div class="lg:col-span-8 flex flex-col justify-center px-2 sm:px-4 py-2">
+          <!-- Form Header -->
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                  <i class="fa-solid fa-paper-plane text-sm"></i>
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+                  Start Your Portfolio
+                </h3>
+              </div>
+              <p class="text-slate-500 text-xs sm:text-sm mt-1">
+                Tell us about your portfolio and get your subdomain.
+              </p>
+            </div>
+            
+            <!-- Playful Doodles / Sparkle Accent -->
+            <div class="text-emerald-500/80 hidden sm:block pr-2">
+              <svg class="w-6 h-6 rotate-12" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Form Fields -->
+          <form class="space-y-4" onsubmit="event.preventDefault();">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Full Name -->
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-slate-400 text-sm">
+                  <i class="fa-regular fa-user"></i>
+                </span>
+                <input type="text" placeholder="Full Name *" required class="w-full pl-11 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
+              </div>
+
+              <!-- Email Address -->
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-slate-400 text-sm">
+                  <i class="fa-regular fa-envelope"></i>
+                </span>
+                <input type="email" placeholder="Email Address *" required class="w-full pl-11 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
+              </div>
+            </div>
+
+            <!-- Role / Portfolio Type Dropdown -->
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-slate-400 text-sm">
+                <i class="fa-solid fa-briefcase"></i>
+              </span>
+              <select class="w-full pl-11 pr-10 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 appearance-none transition-all cursor-pointer">
+                <option value="" disabled selected>Your Role / Portfolio Type</option>
+                <option value="developer">Developer & Software Engineer</option>
+                <option value="designer">UI/UX & Product Designer</option>
+                <option value="creator">Content Creator & Media</option>
+                <option value="business">Business & Consultant</option>
+                <option value="other">Personal / Other</option>
+              </select>
+              <span class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-slate-400 text-xs">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </div>
+
+            <!-- Message (Optional) -->
+            <div class="relative">
+              <span class="absolute top-3.5 left-4 pointer-events-none text-slate-400 text-sm">
+                <i class="fa-regular fa-comment-dots"></i>
+              </span>
+              <textarea rows="3" placeholder="Message (Optional)" class="w-full pl-11 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all resize-none"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm sm:text-base flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20 hover:shadow-lg hover:shadow-emerald-600/30 transition-all">
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>Submit & Get Subdomain</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section id="templates" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <div class="inline-flex items-center justify-center gap-2 mb-2">
+        <span class="text-emerald-600 text-lg">
+          <i class="fa-solid fa-border-all"></i>
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Explore Our Portfolio Templates
+        </h2>
+      </div>
+      <p class="text-slate-500 text-sm sm:text-base">
+        Beautiful, modern and fully customizable templates for your portfolio.
+      </p>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+      <button onclick="filterTemplates('all', this)" class="template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-[#064e3b] text-white shadow-sm hover:bg-emerald-900 transition-all cursor-pointer">
+        All Templates
+      </button>
+      <button onclick="filterTemplates('creative-studio', this)" class="template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer">
+        Creative Studio
+      </button>
+      <button onclick="filterTemplates('developer-hub', this)" class="template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer">
+        Developer Hub
+      </button>
+      <button onclick="filterTemplates('minimalist', this)" class="template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer">
+        Minimalist
+      </button>
+      <button onclick="filterTemplates('business', this)" class="template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer">
+        Business
+      </button>
+      <button onclick="filterTemplates('personal', this)" class="template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer">
+        Personal
+      </button>
+    </div>
+
+    <!-- 2x3 Grid of 6 Templates -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="templates-grid">
+      
+      <!-- Template Card 1: Creative Studio (Screenshot_50) -->
+      <div class="template-card bg-white rounded-xl p-5 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col sm:flex-row gap-5 items-center" data-categories="all creative-studio personal">
+        <!-- Visual Preview Frame -->
+        <div class="w-full sm:w-1/2 h-44 rounded-xl overflow-hidden relative border border-slate-200 bg-slate-50 group">
+          <img src="imgs/templetes/Screenshot_50.png" alt="Creative Studio Template" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <!-- Details -->
+        <div class="w-full sm:w-1/2 flex flex-col justify-between py-1">
+          <div>
+            <div class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-600 text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">
+              <i class="fa-solid fa-fire text-[9px]"></i>
+              Popular
+            </div>
+            <h4 class="text-base font-bold text-slate-900">Creative Studio</h4>
+            <p class="text-slate-500 text-xs mt-1 leading-snug">
+              Modern product designer & agency layout with clean vibrant accents.
+            </p>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <!-- Color dots -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 ring-1 ring-slate-300"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-teal-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-800"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-100"></span>
+            </div>
+            <!-- View Demo button -->
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-600 px-4 py-1.5 rounded-full border border-slate-200 hover:border-emerald-500 transition-colors">
+              <span>View Demo</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Template Card 2: Developer Hub (Screenshot_51) -->
+      <div class="template-card bg-white rounded-xl p-5 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col sm:flex-row gap-5 items-center" data-categories="all developer-hub business">
+        <!-- Visual Preview Frame -->
+        <div class="w-full sm:w-1/2 h-44 rounded-xl overflow-hidden relative border border-slate-800 bg-[#070b09] group">
+          <img src="imgs/templetes/Screenshot_51.png" alt="Developer Hub Template" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <!-- Details -->
+        <div class="w-full sm:w-1/2 flex flex-col justify-between py-1">
+          <div>
+            <div class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">
+              <i class="fa-solid fa-bolt text-[9px]"></i>
+              Trending
+            </div>
+            <h4 class="text-base font-bold text-slate-900">Developer Hub</h4>
+            <p class="text-slate-500 text-xs mt-1 leading-snug">
+              High-impact dark theme for software engineers, tech leads and teams.
+            </p>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <!-- Color dots -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#052e16] ring-1 ring-slate-300"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-900"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-300"></span>
+            </div>
+            <!-- View Demo button -->
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-600 px-4 py-1.5 rounded-full border border-slate-200 hover:border-emerald-500 transition-colors">
+              <span>View Demo</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Template Card 3: Frontend Pro (Screenshot_54) -->
+      <div class="template-card bg-white rounded-xl p-5 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col sm:flex-row gap-5 items-center" data-categories="all developer-hub personal">
+        <!-- Visual Preview Frame -->
+        <div class="w-full sm:w-1/2 h-44 rounded-xl overflow-hidden relative border border-slate-800 bg-[#0f172a] group">
+          <img src="imgs/templetes/Screenshot_54.png" alt="Frontend Pro Template" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <!-- Details -->
+        <div class="w-full sm:w-1/2 flex flex-col justify-between py-1">
+          <div>
+            <h4 class="text-base font-bold text-slate-900">Frontend Pro</h4>
+            <p class="text-slate-500 text-xs mt-1 leading-snug">
+              Sleek neon cyan hexagonal aesthetics tailored for web developers.
+            </p>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <!-- Color dots -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#0891b2] ring-1 ring-slate-300"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#0f172a]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-sky-200"></span>
+            </div>
+            <!-- View Demo button -->
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-600 px-4 py-1.5 rounded-full border border-slate-200 hover:border-emerald-500 transition-colors">
+              <span>View Demo</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Template Card 4: Minimalist Designer (Screenshot_55) -->
+      <div class="template-card bg-white rounded-xl p-5 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col sm:flex-row gap-5 items-center" data-categories="all minimalist creative-studio">
+        <!-- Visual Preview Frame -->
+        <div class="w-full sm:w-1/2 h-44 rounded-xl overflow-hidden relative border border-slate-800 bg-[#0b0f19] group">
+          <img src="imgs/templetes/Screenshot_55.png" alt="Minimalist Designer Template" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <!-- Details -->
+        <div class="w-full sm:w-1/2 flex flex-col justify-between py-1">
+          <div>
+            <h4 class="text-base font-bold text-slate-900">Minimalist Designer</h4>
+            <p class="text-slate-500 text-xs mt-1 leading-snug">
+              Sophisticated monochrome layout with bold typography for creators.
+            </p>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <!-- Color dots -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600 ring-1 ring-slate-300"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-900"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-100"></span>
+            </div>
+            <!-- View Demo button -->
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-600 px-4 py-1.5 rounded-full border border-slate-200 hover:border-emerald-500 transition-colors">
+              <span>View Demo</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Template Card 5: Executive Personal (Screenshot_53) -->
+      <div class="template-card bg-white rounded-xl p-5 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col sm:flex-row gap-5 items-center" data-categories="all business personal">
+        <!-- Visual Preview Frame -->
+        <div class="w-full sm:w-1/2 h-44 rounded-xl overflow-hidden relative border border-slate-800 bg-black group">
+          <img src="imgs/templetes/Screenshot_53.png" alt="Executive Personal Template" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <!-- Details -->
+        <div class="w-full sm:w-1/2 flex flex-col justify-between py-1">
+          <div>
+            <h4 class="text-base font-bold text-slate-900">Executive Personal</h4>
+            <p class="text-slate-500 text-xs mt-1 leading-snug">
+              Luxury dark portfolio featuring circular neon glow for designers.
+            </p>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <!-- Color dots -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-orange-600 ring-1 ring-slate-300"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-neutral-900"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-200"></span>
+            </div>
+            <!-- View Demo button -->
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-600 px-4 py-1.5 rounded-full border border-slate-200 hover:border-emerald-500 transition-colors">
+              <span>View Demo</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Template Card 6: UI/UX Showcase (Screenshot_52) -->
+      <div class="template-card bg-white rounded-xl p-5 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col sm:flex-row gap-5 items-center" data-categories="all creative-studio personal">
+        <!-- Visual Preview Frame -->
+        <div class="w-full sm:w-1/2 h-44 rounded-xl overflow-hidden relative border border-slate-800 bg-[#120707] group">
+          <img src="imgs/templetes/Screenshot_52.png" alt="UI/UX Showcase Template" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <!-- Details -->
+        <div class="w-full sm:w-1/2 flex flex-col justify-between py-1">
+          <div>
+            <h4 class="text-base font-bold text-slate-900">UI/UX Showcase</h4>
+            <p class="text-slate-500 text-xs mt-1 leading-snug">
+              Bold crimson dark theme designed for digital artists and consultants.
+            </p>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <!-- Color dots -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-600 ring-1 ring-slate-300"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-neutral-900"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-200"></span>
+            </div>
+            <!-- View Demo button -->
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-600 px-4 py-1.5 rounded-full border border-slate-200 hover:border-emerald-500 transition-colors">
+              <span>View Demo</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Feature / Value Proposition Strip -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="bg-white rounded-xl border border-slate-100 shadow-md p-6 sm:p-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+        
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center pt-4 md:pt-0">
+          <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3 shadow-xs">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-slate-900">Secure & Reliable</h4>
+          <p class="text-slate-500 text-xs mt-1">Your data is always safe</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center pt-4 md:pt-0">
+          <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3 shadow-xs">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-slate-900">Instant Setup</h4>
+          <p class="text-slate-500 text-xs mt-1">Get started in seconds</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center pt-4 md:pt-0">
+          <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3 shadow-xs">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-slate-900">100% Responsive</h4>
+          <p class="text-slate-500 text-xs mt-1">Looks great on all devices</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="flex flex-col items-center pt-4 md:pt-0">
+          <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3 shadow-xs">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-slate-900">24/7 Support</h4>
+          <p class="text-slate-500 text-xs mt-1">We're here to help</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Banner -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-8">
+    <div class="relative bg-gradient-to-r from-[#044e36] via-[#065f46] to-[#059669] rounded-xl p-8 sm:p-12 text-white shadow-xl overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Subtle background circles -->
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-emerald-400/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="absolute left-1/3 -top-12 w-48 h-48 bg-emerald-300/10 rounded-full blur-2xl pointer-events-none"></div>
+
+      <!-- Left Content & Rocket -->
+      <div class="flex items-center gap-5 sm:gap-6 z-10 text-center md:text-left flex-col md:flex-row">
+        <!-- Rocket Circle Badge -->
+        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-emerald-300 text-2xl sm:text-3xl shadow-lg shrink-0">
+          <i class="fa-solid fa-rocket transform -rotate-45"></i>
+        </div>
+
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+            Ready to showcase your portfolio?
+          </h3>
+          <p class="text-emerald-100 text-sm sm:text-base mt-1.5 font-normal">
+            Join now and get your personal subdomain today!
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Action Button & Sparkle -->
+      <div class="z-10 relative shrink-0">
+        <!-- Sparkle Doodles -->
+        <div class="absolute -top-5 right-2 text-white/70 text-xs hidden sm:block">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <a href="#form" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-900 font-bold text-sm sm:text-base px-8 py-4 rounded-full shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 transition-all">
+          <span>Get Started Free</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Responsive Footer Section -->
+  <footer class="bg-[#090f1d] text-slate-400 pt-16 pb-12 border-t border-slate-800/80 relative overflow-hidden">
+    <!-- Ambient glow behind footer -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-emerald-600/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Grid: 4 Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-slate-800/80">
+        
+        <!-- Column 1: Brand & Bio (4 cols on lg) -->
+        <div class="lg:col-span-4 space-y-5">
+          <!-- Logo -->
+          <a href="#" class="inline-flex items-center gap-2.5 group">
+            <img src="imgs/logo/logo.png" alt="PortfolioeVault Logo" class="w-9 h-9 object-contain group-hover:scale-105 transition-transform">
+            <span class="text-xl font-bold tracking-tight text-white">
+              Portfolio<span class="text-emerald-400">E-Vault</span>
+            </span>
+          </a>
+
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Empowering creators, developers, and professionals to secure their personalized portfolio subdomain with stunning, conversion-optimized templates.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-2.5 pt-2">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm border border-slate-700/60">
+              <i class="fa-brands fa-github text-base"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm border border-slate-700/60">
+              <i class="fa-brands fa-x-twitter text-base"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm border border-slate-700/60">
+              <i class="fa-brands fa-linkedin-in text-base"></i>
+            </a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm border border-slate-700/60">
+              <i class="fa-brands fa-dribbble text-base"></i>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm border border-slate-700/60">
+              <i class="fa-brands fa-discord text-base"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links (2 cols on lg) -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a href="#" class="hover:text-emerald-400 transition-colors inline-block">Home</a>
+            </li>
+            <li>
+              <a href="#templates" class="hover:text-emerald-400 transition-colors inline-block">Templates</a>
+            </li>
+            <li>
+              <a href="#form" class="hover:text-emerald-400 transition-colors inline-block">Get Subdomain</a>
+            </li>
+            <li>
+              <a href="#templates" class="hover:text-emerald-400 transition-colors inline-block">Live Demos</a>
+            </li>
+            <li>
+              <a href="#form" class="hover:text-emerald-400 transition-colors inline-block">Contact Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Templates (3 cols on lg) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider">Templates</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <button onclick="filterTemplates('creative-studio', document.querySelectorAll('.template-filter-btn')[1]); document.getElementById('templates').scrollIntoView({behavior: 'smooth'});" class="hover:text-emerald-400 transition-colors text-left cursor-pointer">Creative Studio</button>
+            </li>
+            <li>
+              <button onclick="filterTemplates('developer-hub', document.querySelectorAll('.template-filter-btn')[2]); document.getElementById('templates').scrollIntoView({behavior: 'smooth'});" class="hover:text-emerald-400 transition-colors text-left cursor-pointer">Developer Hub</button>
+            </li>
+            <li>
+              <button onclick="filterTemplates('minimalist', document.querySelectorAll('.template-filter-btn')[3]); document.getElementById('templates').scrollIntoView({behavior: 'smooth'});" class="hover:text-emerald-400 transition-colors text-left cursor-pointer">Minimalist Designer</button>
+            </li>
+            <li>
+              <button onclick="filterTemplates('developer-hub', document.querySelectorAll('.template-filter-btn')[2]); document.getElementById('templates').scrollIntoView({behavior: 'smooth'});" class="hover:text-emerald-400 transition-colors text-left cursor-pointer">Frontend Pro</button>
+            </li>
+            <li>
+              <button onclick="filterTemplates('business', document.querySelectorAll('.template-filter-btn')[4]); document.getElementById('templates').scrollIntoView({behavior: 'smooth'});" class="hover:text-emerald-400 transition-colors text-left cursor-pointer">Executive Personal</button>
+            </li>
+            <li>
+              <button onclick="filterTemplates('creative-studio', document.querySelectorAll('.template-filter-btn')[1]); document.getElementById('templates').scrollIntoView({behavior: 'smooth'});" class="hover:text-emerald-400 transition-colors text-left cursor-pointer">UI/UX Showcase</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter (3 cols on lg) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider">Stay Updated</h4>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Subscribe to get early access to new templates, design trends, and platform updates.
+          </p>
+
+          <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to PortfolioeVault updates!');" class="space-y-2.5">
+            <div class="relative">
+              <input type="email" placeholder="Enter your email" required class="w-full bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-xs sm:text-sm rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500 transition-all">
+            </div>
+            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-lg hover:shadow-emerald-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer">
+              <span>Subscribe Now</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal Links -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2026 <span class="text-slate-300 font-medium">PortfolioeVault</span>. All rights reserved.
+        </div>
+
+        <!-- Legal Links -->
+        <div class="flex flex-wrap items-center gap-6">
+          <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-slate-300 transition-colors">Cookie Policy</a>
+          <a href="#" class="hover:text-slate-300 transition-colors">Security</a>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div>
+          <a href="#" class="inline-flex items-center gap-1.5 text-slate-400 hover:text-emerald-400 transition-colors">
+            <span>Back to top</span>
+            <i class="fa-solid fa-arrow-up text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Template Filter JavaScript -->
+  <script>
+    function filterTemplates(category, btn) {
+      // Update filter button styling
+      const buttons = document.querySelectorAll('.template-filter-btn');
+      buttons.forEach(function(b) {
+        b.className = 'template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer';
+      });
+      if (btn) {
+        btn.className = 'template-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-[#064e3b] text-white shadow-sm hover:bg-emerald-900 transition-all cursor-pointer';
+      }
+
+      // Filter template cards
+      const cards = document.querySelectorAll('.template-card');
+      cards.forEach(function(card) {
+        const categories = (card.getAttribute('data-categories') || '').split(' ');
+        if (category === 'all' || categories.indexOf(category) !== -1) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
